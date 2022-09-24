@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class testIfCollision : MonoBehaviour
 {
+    public charUnit unit;
     private Collider2D ourCollider;
 
     // Start is called before the first frame update
@@ -14,6 +15,10 @@ public class testIfCollision : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider){
         Debug.Log("Trigger!");
+        //at this rate, im spaghetti coding, but who cares
+        unit.heal(1f);
+
+
         gameObject.SetActive(false);
 
         characterMove.DebugLogPrint("Hello, world.");

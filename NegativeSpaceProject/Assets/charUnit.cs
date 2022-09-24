@@ -21,6 +21,10 @@ public class charUnit : MonoBehaviour
         healthSlider.minValue = 0f;
     }
 
+    public void heal(float amount){
+        currentPlayerHealth+=amount;
+    }
+
     // Update is called once per frame
     void Update()
     {
