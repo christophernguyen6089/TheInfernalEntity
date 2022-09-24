@@ -25,7 +25,10 @@ public class fountainSpawner : MonoBehaviour
         spawnCountdown=2f;
         decreaseParameter=1f;
 
-        Instantiate(healthPickup, new Vector3(0,0,0), transform.rotation);
+        //IMPORTANT!!!!!!!!!!!!!!!!!!!!!
+        transform.position = new Vector3(5,5,0);
+        //IMPORTANT!!!!!!!!!!!!!!!!!!!!!
+        
         //BE AWARE OF HARDCODED COORDINATES
     }
 
@@ -34,7 +37,7 @@ public class fountainSpawner : MonoBehaviour
     {
         spawnCountdown-=Time.deltaTime*decreaseParameter;
         if(spawnCountdown<=0){
-            area = new Vector3(Random.Range(-radius, radius), Random.Range(-radius, radius), 0);
+            area = new Vector3(Random.Range(-radius, radius)+transform.position.x, Random.Range(-radius, radius)+transform.position.y, 0);
             Instantiate(healthPickup, area, transform.rotation);
             //BE AWARE OF HARDCODED COORDINATES
             spawnCountdown=1f;
