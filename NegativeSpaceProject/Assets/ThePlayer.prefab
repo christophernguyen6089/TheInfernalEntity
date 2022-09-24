@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4810481504718742598}
   - component: {fileID: 4810481504718742596}
   - component: {fileID: 4810481504718742599}
+  - component: {fileID: 8909988808695886312}
   m_Layer: 0
   m_Name: ThePlayer
   m_TagString: Untagged
@@ -96,8 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba98e6372d7ad9c4e941f07a9171f6f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHealth: 10
   playerBody: {fileID: 4810481504718742596}
-  myCollider: {fileID: 4810481504718742599}
 --- !u!50 &4810481504718742596
 Rigidbody2D:
   serializedVersion: 4
@@ -145,3 +146,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
+--- !u!114 &8909988808695886312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4810481504718742603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 789e4ea2be76baf48b1b52b2bc193697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
