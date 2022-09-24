@@ -21,12 +21,12 @@ public class fountainSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        radius=3f;
+        radius=10f;
         spawnCountdown=2f;
         decreaseParameter=1f;
 
         //IMPORTANT!!!!!!!!!!!!!!!!!!!!!
-        transform.position = new Vector3(5,5,0);
+        transform.position = new Vector3(0,0,0);
         //IMPORTANT!!!!!!!!!!!!!!!!!!!!!
         
         //BE AWARE OF HARDCODED COORDINATES
