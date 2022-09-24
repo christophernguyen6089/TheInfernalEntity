@@ -9,15 +9,11 @@ public class characterMove : MonoBehaviour
     public Rigidbody2D playerBody;
     private Vector2 moveDirection = Vector2.zero;
 
-    
-
-    private Camera ourCamera;
     private float xMovement, yMovement;
     
     // Start is called before the first frame update
     private void Start()
     {
-        ourCamera = Camera.main;
     }
 
     private void Update(){
@@ -25,13 +21,14 @@ public class characterMove : MonoBehaviour
         yMovement=Input.GetAxis("Vertical");
 
         if(Input.GetKey(KeyCode.LeftShift)){
-            playerBody.velocity = new Vector2(xMovement*15f, yMovement*15f);
+            playerBody.velocity = new Vector3(xMovement*15f, yMovement*15f);
             unit.decreaseParameter=1.5f;
         }
         else{
-            playerBody.velocity = new Vector2(xMovement*10f, yMovement*10f);
+            playerBody.velocity = new Vector3(xMovement*10f, yMovement*10f);
             unit.decreaseParameter=1f;
         }
+
         
 
         
