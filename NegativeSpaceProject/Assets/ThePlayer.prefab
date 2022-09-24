@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBody: {fileID: 4810481504718742596}
+  myCollider: {fileID: 4810481504718742599}
 --- !u!50 &4810481504718742596
 Rigidbody2D:
   serializedVersion: 4

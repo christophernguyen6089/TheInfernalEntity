@@ -8,17 +8,22 @@ public class characterMove : MonoBehaviour
     private Vector2 moveDirection = Vector2.zero;
 
     private Camera ourCamera;
+    //public Collider2D theirCollider;
     private float xMovement, yMovement;
     
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         ourCamera = Camera.main;
     }
 
-    void Update(){
+    private void Update(){
         xMovement=Input.GetAxis("Horizontal");
         yMovement=Input.GetAxis("Vertical");
-        playerBody.velocity = new Vector2(xMovement*25f, yMovement*25f);
+        playerBody.velocity = new Vector2(xMovement*10f, yMovement*10f);
+    }
+
+    public static void DebugLogPrint(string message){
+        Debug.Log(message);
     }
 }

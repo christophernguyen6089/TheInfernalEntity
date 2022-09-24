@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class testIfCollision : MonoBehaviour
 {
-    Collider ourCollider;
+    private Collider2D ourCollider;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        ourCollider = GetComponent<Collider>();    
-    }
+    // Start()
+    //{
+        //ourCollider = GetComponent<Collider2D>();    
+    //}
 
-    private bool OnTriggerEnter2D(Collider2D collider){
+    private void OnTriggerEnter2D(Collider2D collider){
         Debug.Log("Trigger!");
-        return true;
+        gameObject.SetActive(false);
+
+        characterMove.DebugLogPrint("Hello, world.");
+        //insert method for setting player's HP
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
