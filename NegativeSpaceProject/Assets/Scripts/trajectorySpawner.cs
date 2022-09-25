@@ -17,7 +17,7 @@ public class trajectorySpawner : MonoBehaviour
 
     
     public GameObject healthPickup;
-    public Rigidbody2D pickupRB;
+    
     
     void Start(){
         spawnCountdownInit = spawnCountdown;
@@ -33,7 +33,7 @@ public class trajectorySpawner : MonoBehaviour
             characterMove.DebugLogPrint("Hello, world.");
             area = new Vector3(transform.position.x, Random.Range(-radius, radius)+transform.position.y, 0);
             Instantiate(healthPickup, area, transform.rotation);
-            pickupRB.velocity = new Vector3(5,0,0);
+            
             //BE AWARE OF HARDCODED COORDINATES
             spawnCountdown=spawnCountdownInit;
         }
