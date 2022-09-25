@@ -27,6 +27,7 @@ public class fountainSpawner : MonoBehaviour
 
         //IMPORTANT!!!!!!!!!!!!!!!!!!!!!
         transform.position = new Vector3(0,0,0);
+        charUnit unit = new charUnit();
         //IMPORTANT!!!!!!!!!!!!!!!!!!!!!
         
         //BE AWARE OF HARDCODED COORDINATES
@@ -41,6 +42,10 @@ public class fountainSpawner : MonoBehaviour
             Instantiate(healthPickup, area, transform.rotation);
             //BE AWARE OF HARDCODED COORDINATES
             spawnCountdown=1f;
+        }
+        if(charUnit.gameOverFlag==true){
+            characterMove.DebugLogPrint("Game over from fountain spawner.");
+            decreaseParameter=0;
         }
     }
 }

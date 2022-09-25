@@ -6,7 +6,9 @@ using TMPro;
 
 public class charUnit : MonoBehaviour
 {
+    public static bool gameOverFlag=false;
     public GameObject gameOverScreen;
+    public GameObject parentHealingItem;
     public float playerMaxHealth = 10f;
     public float currentPlayerHealth = 10f;
     public float decreaseParameter=0f;
@@ -36,9 +38,10 @@ public class charUnit : MonoBehaviour
         healthSlider.value = currentPlayerHealth;
 
         if(currentPlayerHealth<=0f){
-           characterMove.DebugLogPrint("Goodbye, world.");
+            characterMove.DebugLogPrint("Goodbye, world.");
+            gameOverFlag=true;
             gameOverScreen.SetActive(true);
-
+            parentHealingItem.SetActive(false);
             gameObject.SetActive(false);
         }
     }
