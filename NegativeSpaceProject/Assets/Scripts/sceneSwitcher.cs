@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class sceneSwitcher : MonoBehaviour
 {
     public static int playerLevelNum;
+    public static int score;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,7 +14,6 @@ public class sceneSwitcher : MonoBehaviour
     }
 
     public void nextLevel(){
-        
         string newLevel = "Level"+playerLevelNum;
         if(playerLevelNum!=3){
             SceneManager.LoadScene(newLevel);

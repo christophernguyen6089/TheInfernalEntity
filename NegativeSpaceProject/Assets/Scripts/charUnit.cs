@@ -7,7 +7,7 @@ using TMPro;
 
 public class charUnit : MonoBehaviour
 {
-
+    public static int score=0;
     public static bool gameOverFlag=false;
 
     public GameObject parentHealingItem;
@@ -18,6 +18,7 @@ public class charUnit : MonoBehaviour
     //based on napkin math, 1f is roughly equal to 1 second, so this will give about 10 seconds of leeway... i think
 
     public Slider healthSlider;
+    public Slider timeSlider;
 
     
     
@@ -27,6 +28,8 @@ public class charUnit : MonoBehaviour
     {
         healthSlider.maxValue = 10f;
         healthSlider.minValue = 0f;
+        timeSlider.maxValue=levelLength;
+        timeSlider.minValue=0f;
     }
 
     public void heal(float amount){
@@ -35,6 +38,7 @@ public class charUnit : MonoBehaviour
         if(currentPlayerHealth>playerMaxHealth){
             currentPlayerHealth=playerMaxHealth;
         }
+        score++;
     }
 
     // Update is called once per frame
@@ -43,6 +47,7 @@ public class charUnit : MonoBehaviour
         currentPlayerHealth-=Time.deltaTime*decreaseParameter;
         levelLength-=Time.deltaTime;
         healthSlider.value = currentPlayerHealth;
+        timeSlider.value = levelLength;
 
         if(currentPlayerHealth<=0f){
             
