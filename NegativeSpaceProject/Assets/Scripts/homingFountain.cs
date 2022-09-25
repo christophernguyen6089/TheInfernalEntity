@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class fountainSpawner : MonoBehaviour
+public class homingFountain : MonoBehaviour
 {
-    public float radius;
-    public float spawnCountdown;
-    public float lifespan;
+    public float radius=3f;
+    public float spawnCountdown=3f;
+    public float lifespan=20f;
 
     private float decreaseParameter=1f;
     private Vector3 area;

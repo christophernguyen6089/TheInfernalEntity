@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4359900289812033886}
-  - component: {fileID: 3311739403541263968}
+  - component: {fileID: 5432667174824059392}
   m_Layer: 0
   m_Name: HealthItemSpawner
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3311739403541263968
+--- !u!114 &5432667174824059392
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,8 +40,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4359900289812033885}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 010c4a47dbce62c4cbaf40eb25c355f7, type: 3}
+  m_Script: {fileID: 11500000, guid: efaa240a9e2e43b45994076521a4010f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPickup: {fileID: 2862241656913015181, guid: ca80dfa28e47863459b0a8757fdd65ed,
-    type: 3}
