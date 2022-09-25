@@ -6,9 +6,10 @@ public class fountainSpawner : MonoBehaviour
 {
     public float radius;
     public float spawnCountdown;
+    public float spawnCountdownInit;
     public float lifespan;
 
-    private float decreaseParameter=1f;
+    public float decreaseParameter;
     private Vector3 area;
 
     public charUnit unit;
@@ -17,6 +18,9 @@ public class fountainSpawner : MonoBehaviour
     
     public GameObject healthPickup;
     
+    void Start(){
+        spawnCountdownInit = spawnCountdown;
+    }
 
     // Update is called once per frame
     void Update()
@@ -24,10 +28,10 @@ public class fountainSpawner : MonoBehaviour
         spawnCountdown-=Time.deltaTime*decreaseParameter;
         lifespan-=Time.deltaTime;
         if(spawnCountdown<=0){
-            area = new Vector3(Random.Range(-radius, radius)+unit.transform.position.x, Random.Range(-radius, radius)+unit.transform.position.y, 0);
+            area = new Vector3(Random.Range(-radius, radius)+transform.position.x, Random.Range(-radius, radius)+transform.position.x, 0);
             Instantiate(healthPickup, area, transform.rotation);
             //BE AWARE OF HARDCODED COORDINATES
-            spawnCountdown=1f;
+            spawnCountdown=spawnCountdownInit;
         }
         if(lifespan<=0){
 

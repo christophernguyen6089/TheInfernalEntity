@@ -13,7 +13,7 @@ public class testIfCollision : MonoBehaviour
         unit.heal(1f);
 
 
-        this.gameObject.SetActive(false);
+        Destroy(this.gameObject);
 
         characterMove.DebugLogPrint("Hello, world.");
         //insert method for setting player's HP
