@@ -48,8 +48,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unit: {fileID: 8909988808695886312, guid: badd438ff1a97e5408535af05ae16f21, type: 3}
   healAmount: 1
+  ourCollider: {fileID: 4810481504718742599, guid: badd438ff1a97e5408535af05ae16f21,
+    type: 3}
   rb: {fileID: 9147246596758780811}
-  speed: {x: 0, y: 0, z: 0}
+  xSpeed: 0
+  ySpeed: 0
 --- !u!212 &4931184982695419333
 SpriteRenderer:
   m_ObjectHideFlags: 0

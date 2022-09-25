@@ -37,9 +37,5 @@ public class fountainSpawner : MonoBehaviour
 
             this.gameObject.SetActive(false);
         }
-        if(charUnit.gameOverFlag==true){
-            characterMove.DebugLogPrint("Game over from fountain spawner.");
-            decreaseParameter=0;
-        }
     }
 }

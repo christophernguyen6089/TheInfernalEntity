@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8909988808695886312}
   m_Layer: 0
   m_Name: ThePlayer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,8 +160,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverScreen: {fileID: 3789556739173444884, guid: c843275ad006328499f36e655716fb11,
     type: 3}
+  parentHealingItem: {fileID: 0}
   playerMaxHealth: 10
   currentPlayerHealth: 10
   decreaseParameter: 1
+  levelLength: 0
   healthSlider: {fileID: 2558630409856502547, guid: b892f1a57c88f9240adfcbe35e9507f6,
     type: 3}

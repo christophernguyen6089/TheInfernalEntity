@@ -30,7 +30,6 @@ public class trajectorySpawner : MonoBehaviour
         spawnCountdown-=Time.deltaTime*decreaseParameter;
         lifespan-=Time.deltaTime;
         if(spawnCountdown<=0){
-            characterMove.DebugLogPrint("Hello, world.");
             area = new Vector3(transform.position.x, Random.Range(-radius, radius)+transform.position.y, 0);
             Instantiate(healthPickup, area, transform.rotation);
             
@@ -42,7 +41,7 @@ public class trajectorySpawner : MonoBehaviour
             this.gameObject.SetActive(false);
         }
         if(charUnit.gameOverFlag==true){
-            characterMove.DebugLogPrint("Game over from fountain spawner.");
+            
             decreaseParameter=0;
         }
     }

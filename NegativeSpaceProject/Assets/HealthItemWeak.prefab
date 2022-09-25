@@ -98,8 +98,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unit: {fileID: 8909988808695886312, guid: badd438ff1a97e5408535af05ae16f21, type: 3}
   healAmount: 0.5
+  ourCollider: {fileID: 4810481504718742599, guid: badd438ff1a97e5408535af05ae16f21,
+    type: 3}
   rb: {fileID: 6785732721036335137}
-  speed: {x: 0, y: 0, z: 0}
+  xSpeed: 0
+  ySpeed: 0
 --- !u!50 &6785732721036335137
 Rigidbody2D:
   serializedVersion: 4
