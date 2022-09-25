@@ -538,6 +538,61 @@ PrefabInstance:
       propertyPath: unit
       value: 
       objectReference: {fileID: 2022761526}
+    - target: {fileID: 3637787911071612607, guid: 70cba09c00d961645bb1784c7fda8d60,
+        type: 3}
+      propertyPath: xSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924713654946503205, guid: 70cba09c00d961645bb1784c7fda8d60,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.atime0
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924713654946503205, guid: 70cba09c00d961645bb1784c7fda8d60,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.atime1
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924713654946503205, guid: 70cba09c00d961645bb1784c7fda8d60,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.ctime0
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924713654946503205, guid: 70cba09c00d961645bb1784c7fda8d60,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924713654946503205, guid: 70cba09c00d961645bb1784c7fda8d60,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924713654946503205, guid: 70cba09c00d961645bb1784c7fda8d60,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924713654946503205, guid: 70cba09c00d961645bb1784c7fda8d60,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.b
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924713654946503205, guid: 70cba09c00d961645bb1784c7fda8d60,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.g
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924713654946503205, guid: 70cba09c00d961645bb1784c7fda8d60,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.r
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5924713654946503205, guid: 70cba09c00d961645bb1784c7fda8d60,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70cba09c00d961645bb1784c7fda8d60, type: 3}
 --- !u!1 &936504692 stripped
