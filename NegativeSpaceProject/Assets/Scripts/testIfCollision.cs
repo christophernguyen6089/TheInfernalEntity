@@ -5,7 +5,10 @@ using UnityEngine;
 public class testIfCollision : MonoBehaviour
 {
     public charUnit unit;
+
     private Collider2D ourCollider;
+
+
 
     private void OnTriggerEnter2D(Collider2D collider){
         Debug.Log("Trigger!");
