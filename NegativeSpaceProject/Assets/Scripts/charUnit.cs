@@ -6,7 +6,7 @@ using TMPro;
 
 public class charUnit : MonoBehaviour
 {
-
+    public GameObject gameOverScreen;
     public float playerMaxHealth = 10f;
     public float currentPlayerHealth = 10f;
     public float decreaseParameter=0f;
@@ -20,6 +20,7 @@ public class charUnit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameOverScreen.SetActive(false);
         healthSlider.maxValue = 10f;
         healthSlider.minValue = 0f;
     }
@@ -36,6 +37,8 @@ public class charUnit : MonoBehaviour
 
         if(currentPlayerHealth<=0f){
            characterMove.DebugLogPrint("Goodbye, world.");
+            gameOverScreen.SetActive(true);
+
             gameObject.SetActive(false);
         }
     }

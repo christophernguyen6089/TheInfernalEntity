@@ -158,7 +158,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 789e4ea2be76baf48b1b52b2bc193697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverScreen: {fileID: 3789556739173444884, guid: c843275ad006328499f36e655716fb11,
+    type: 3}
   playerMaxHealth: 10
   currentPlayerHealth: 10
   decreaseParameter: 1
-  healthSlider: {fileID: 0}
+  healthSlider: {fileID: 2558630409856502547, guid: b892f1a57c88f9240adfcbe35e9507f6,
+    type: 3}
