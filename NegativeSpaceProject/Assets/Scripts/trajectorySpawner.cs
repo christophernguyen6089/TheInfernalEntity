@@ -17,9 +17,11 @@ public class trajectorySpawner : MonoBehaviour
 
     
     public GameObject healthPickup;
+    public Rigidbody2D pickupRB;
     
     void Start(){
         spawnCountdownInit = spawnCountdown;
+        //pickupRB = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -28,8 +30,10 @@ public class trajectorySpawner : MonoBehaviour
         spawnCountdown-=Time.deltaTime*decreaseParameter;
         lifespan-=Time.deltaTime;
         if(spawnCountdown<=0){
-            area = new Vector3(Random.Range(-radius, radius)+transform.position.x, Random.Range(-radius, radius)+transform.position.x, 0);
+            characterMove.DebugLogPrint("Hello, world.");
+            area = new Vector3(transform.position.x, Random.Range(-radius, radius)+transform.position.y, 0);
             Instantiate(healthPickup, area, transform.rotation);
+            pickupRB.velocity = new Vector3(5,0,0);
             //BE AWARE OF HARDCODED COORDINATES
             spawnCountdown=spawnCountdownInit;
         }

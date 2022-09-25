@@ -199,6 +199,11 @@ PrefabInstance:
       propertyPath: unit
       value: 
       objectReference: {fileID: 809353975}
+    - target: {fileID: 8292893135293872384, guid: ca80dfa28e47863459b0a8757fdd65ed,
+        type: 3}
+      propertyPath: healAmount
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca80dfa28e47863459b0a8757fdd65ed, type: 3}
 --- !u!1 &30470255 stripped
@@ -293,7 +298,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthPickup
       value: 
-      objectReference: {fileID: 1568461901}
+      objectReference: {fileID: 30470255}
     - target: {fileID: 5432667174824059392, guid: 34723a41a184f434e81ee2a8354bfd81,
         type: 3}
       propertyPath: spawnCountdown
@@ -562,7 +567,7 @@ PrefabInstance:
         type: 3}
       propertyPath: healthPickup
       value: 
-      objectReference: {fileID: 1568461901}
+      objectReference: {fileID: 30470255}
     - target: {fileID: 5432667174824059392, guid: 34723a41a184f434e81ee2a8354bfd81,
         type: 3}
       propertyPath: spawnCountdown
@@ -949,12 +954,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1568461901 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3637787911071612604, guid: 70cba09c00d961645bb1784c7fda8d60,
-    type: 3}
-  m_PrefabInstance: {fileID: 3637787910052178673}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1606118723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1249,5 +1248,10 @@ PrefabInstance:
       propertyPath: unit
       value: 
       objectReference: {fileID: 809353975}
+    - target: {fileID: 3637787911071612607, guid: 70cba09c00d961645bb1784c7fda8d60,
+        type: 3}
+      propertyPath: healAmount
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70cba09c00d961645bb1784c7fda8d60, type: 3}

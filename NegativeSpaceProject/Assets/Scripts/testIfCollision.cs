@@ -5,6 +5,7 @@ using UnityEngine;
 public class testIfCollision : MonoBehaviour
 {
     public charUnit unit;
+    public float healAmount;
 
     private Collider2D ourCollider;
 
@@ -13,7 +14,7 @@ public class testIfCollision : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider){
         Debug.Log("Trigger!");
         //at this rate, im spaghetti coding, but who cares
-        unit.heal(1f);
+        unit.heal(healAmount);
 
 
         Destroy(this.gameObject);
