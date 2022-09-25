@@ -3,16 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class sceneSwitcher : MonoBehaviour
+public class retryLevelButton : MonoBehaviour
 {
     public static int playerLevelNum;
-    // Start is called before the first frame update
-    void Start()
-    {
-        playerLevelNum++;
-    }
 
-    public void nextLevel(){
+    public void retryLevel(){
         
         string newLevel = "Level"+playerLevelNum;
         SceneManager.LoadScene(newLevel);

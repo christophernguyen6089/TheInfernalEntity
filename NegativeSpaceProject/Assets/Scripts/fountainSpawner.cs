@@ -9,7 +9,6 @@ public class fountainSpawner : MonoBehaviour
     public float spawnCountdownInit;
     public float lifespan;
 
-    public float decreaseParameter;
     private Vector3 area;
 
     public charUnit unit;
@@ -25,7 +24,7 @@ public class fountainSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        spawnCountdown-=Time.deltaTime*decreaseParameter;
+        spawnCountdown-=Time.deltaTime;
         lifespan-=Time.deltaTime;
         if(spawnCountdown<=0){
             area = new Vector3(Random.Range(-radius, radius)+transform.position.x, Random.Range(-radius, radius)+transform.position.x, 0);
