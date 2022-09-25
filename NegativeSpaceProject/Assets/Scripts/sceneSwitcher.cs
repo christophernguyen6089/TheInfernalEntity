@@ -15,7 +15,13 @@ public class sceneSwitcher : MonoBehaviour
     public void nextLevel(){
         
         string newLevel = "Level"+playerLevelNum;
-        SceneManager.LoadScene(newLevel);
+        if(playerLevelNum!=3){
+            SceneManager.LoadScene(newLevel);
+        }
+        else{
+            SceneManager.LoadScene("MainMenu");
+        }
+        
     }
 
 }
