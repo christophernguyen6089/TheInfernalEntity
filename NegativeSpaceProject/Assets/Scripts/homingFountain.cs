@@ -10,10 +10,7 @@ public class homingFountain : MonoBehaviour
     public float lifespan=20f;
 
     private Vector3 area;
-
     public charUnit unit;
-    //hard coded cause lol
-
     
     public GameObject healthPickup;
     void Start(){
@@ -28,7 +25,7 @@ public class homingFountain : MonoBehaviour
         if(spawnCountdown<=0){
             area = new Vector3(Random.Range(-radius, radius)+unit.transform.position.x, Random.Range(-radius, radius)+unit.transform.position.y, 0);
             Instantiate(healthPickup, area, transform.rotation);
-            //BE AWARE OF HARDCODED COORDINATES
+
             spawnCountdown=spawnCountdownInit;
         }
         if(lifespan<=0){

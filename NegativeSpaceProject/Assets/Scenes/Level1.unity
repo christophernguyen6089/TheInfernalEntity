@@ -290,7 +290,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Fun Fact: Sprint by holding LShift! Your health drains a little faster
-    sprinting.'
+    by sprinting.'
 --- !u!222 &159275391
 CanvasRenderer:
   m_ObjectHideFlags: 0

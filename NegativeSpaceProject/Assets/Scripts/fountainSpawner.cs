@@ -10,9 +10,7 @@ public class fountainSpawner : MonoBehaviour
     public float lifespan;
 
     private Vector3 area;
-
     public charUnit unit;
-    //hard coded cause lol
 
     
     public GameObject healthPickup;
@@ -27,9 +25,10 @@ public class fountainSpawner : MonoBehaviour
         spawnCountdown-=Time.deltaTime;
         lifespan-=Time.deltaTime;
         if(spawnCountdown<=0){
+            //instantiates a healing object in the range of the current fountainSpawner's position, within the area of a square that is the length of the radius parameter
             area = new Vector3(Random.Range(-radius, radius)+transform.position.x, Random.Range(-radius, radius)+transform.position.x, 0);
             Instantiate(healthPickup, area, transform.rotation);
-            //BE AWARE OF HARDCODED COORDINATES
+
             spawnCountdown=spawnCountdownInit;
         }
         if(lifespan<=0){

@@ -23,17 +23,13 @@ public class testIfCollision : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider){
         if(collider.gameObject.tag == "Player"){
-            
             unit.heal(healAmount);
         }
-        
 
         characterMove.DebugLogPrint(collider.gameObject.tag);
         Destroy(this.gameObject);
 
-        //insert method for setting player's HP
     }
 
-    // Update is called once per frame
     
 }

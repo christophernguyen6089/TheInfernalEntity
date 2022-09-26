@@ -13,7 +13,6 @@ public class trajectorySpawner : MonoBehaviour
     private Vector3 area;
 
     public charUnit unit;
-    //hard coded cause lol
 
     
     public GameObject healthPickup;
@@ -21,7 +20,6 @@ public class trajectorySpawner : MonoBehaviour
     
     void Start(){
         spawnCountdownInit = spawnCountdown;
-        //pickupRB = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -33,7 +31,6 @@ public class trajectorySpawner : MonoBehaviour
             area = new Vector3(transform.position.x, Random.Range(-radius, radius)+transform.position.y, 0);
             Instantiate(healthPickup, area, transform.rotation);
             
-            //BE AWARE OF HARDCODED COORDINATES
             spawnCountdown=spawnCountdownInit;
         }
         if(lifespan<=0){
